@@ -1,12 +1,11 @@
-/* first page- screwing the default stuff*/
-body, h1, p, button {
+body, h1, p, button, footer {
   margin: 0;
   padding: 0;
-  font-family: 'Press Start 2P', sans-serif; /* Retro style font, reallly cool */
+  font-family: 'Press Start 2P', sans-serif;
+  box-sizing: border-box;
 }
-
 body {
-  background: url('https://i.pinimg.com/736x/08/f2/13/08f213d67bd2069184aa90dca44c720e.jpg') no-repeat center center fixed; /* pintresting*/
+  background: url('https://i.pinimg.com/originals/bf/78/09/bf7809ba939168726dc63ee4adc02c55.gif') no-repeat center center fixed; /* pintresting*/
   background-size: cover;
   color: #ffffff;
   text-align: center;
@@ -15,6 +14,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   font-size: 16px;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -88,3 +88,6 @@ body {
     transform: translateY(-10px);
   }
 }
+
+/* Results Page*/
+
