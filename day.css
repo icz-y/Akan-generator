@@ -1,108 +1,120 @@
-/* Hero Section */body, h1, p, button, footer {
+body, html {
   margin: 0;
   padding: 0;
-  font-family:  'Press Start 2P', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   box-sizing: border-box;
+  height: 100%; 
 }
 
- .hero.clean-theme {
+.container-fluid {
   background: url('https://i.pinimg.com/originals/ab/a8/f5/aba8f59ad58977e19d35d0c09760611f.gif') no-repeat center center fixed;
-  background-size: cover; /* Ensures the image scales perfectly to fill the entire viewport */
+  background-size: cover;
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 20px;
   color: #ffffff;
-  height: 100vh; /* Forces the section to fill the viewport */
-  width: 100%;
+  padding: 20px;
+  text-align: center;
 }
 
+.jumbotron {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 8px 8px 0px #000000;
+}
 
-
-/* Content Text */
-.hero .content h1 {
-  font-size: 3 'Press Start 2P', sans-serif; /* Larger for prominence */
-  color: #eceae6;
+h1 {
+  color: #ebbe8b;
   text-shadow: 3px 3px 0px #0f130f;
-  margin-bottom: 20px;
 }
 
-.content p {
-  font-size: 1.3rem; /* Larger supporting text */
-  margin-bottom: 50px;
+p {
+  font-size: 1.2rem;
   line-height: 1.6;
   text-shadow: 2px 2px 0px #0a0d0b;
-}
-
-/* Form Section */
-.akan-form {
-  background: rgba(0, 0, 0, 0.8);
-  border: 3px solid #ebbe8b;
-  border-radius: 15px;
-  padding: 40px 50px;
-  box-shadow: 8px 8px 0px #000000;
-  text-align: left;
-  width: 80%;
-  max-width: 600px; /* Restrict to maintain balance */
-}
-
-.akan-form label {
-  font-size: 1.2rem;
-  margin: 20px 0 10px;
-  color: #ebbe8b;
-}
-
-.akan-form input {
-  width: 100%;
-  font-size: 1.5rem; /* Larger for ease of entry */
-  padding: 15px;
-  background: #0f1a15;
-  border: 3px solid #ebbe8b;
-  border-radius: 8px;
-  color: #ffffff;
   margin-bottom: 20px;
 }
 
-.akan-form input::placeholder {
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+input, select {
+  width: 100%;
+  font-size: 1rem;
+  padding: 15px 10px; 
+  background: rgba(15, 26, 21, 0.9); /* youtube bro */
+  border: 2px solid #ebbe8b; 
+  border-radius: 12px; /* Smooth rounded edges */
   color: #ffffff;
-  opacity: 0.7;
+  transition: all 0.3s ease; /* Adds a smooth transition effect */
 }
 
-.akan-form input:focus {
-  border-color: #ffffff;
-  outline: none;
+input::placeholder, select::placeholder {
+  color: rgba(255, 255, 255, 0.7); 
+  font-style: italic; 
 }
 
-/* Call to Action */
-.akan-form .cta-button {
+input:focus, select:focus {
+  border-color: #ffffff; 
+  background: rgba(15, 26, 21, 1); 
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 10px rgba(235, 190, 139, 0.8); /* makes it pretty*/
+}
+
+input[type="number"], select {
+  appearance: none; 
+  -moz-appearance: textfield; 
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none; 
+}
+
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
   background: #ebbe8b;
   border: none;
   color: #000000;
-  padding: 15px;
-  font-size: 1.5rem; /* Bigger button text */
+  padding: 10px 20px;
+  font-size: 1rem;
   cursor: pointer;
-  width: 100%;
   border-radius: 8px;
   box-shadow: 4px 4px 0px #000000;
   text-transform: uppercase;
 }
 
-.akan-form .cta-button:hover {
+.btn:hover {
   background: #dac772;
   transform: scale(1.05);
 }
-/* Floating Animation */
-.floating {
-  animation: floating 3s infinite ease-in-out;
+
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
 
-@keyframes floating {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+.bottom-left {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #ffffff;
+  font-size: 0.9rem;
 }
