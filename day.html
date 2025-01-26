@@ -1,80 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" dir="ltr">
+
+</html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0" />
     <title>Akan Name Generator</title>
-    <link rel="stylesheet" href="day.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
-    />
-  </head>
-  <body>
-    <script src="/index.js"></script>
-    <div class="hero clean-theme">
-      <div class="content">
-        <h1 class="floating">
-          DISCOVER YOUR <br /><span class="highlight">Akahan mame</span>
-        </h1>
-        <p></p>
-        <p>
-          Enter your birth details below to reveal the day name based on the
-          Akan tradition.
-        </p>
-      </div>
+   />
+   <link rel="stylesheet" href="day.css">
+</head>
 
-      <form class="akan-form">
-        <label for="year">Year</label>
-        <input
-          type="number"
-          id="year"
-          name="year"
-          placeholder="YYYY"
-          min="1900"
-          max="2025"
-          required
-        />
+<body>
+   <script src="/index.js"></script>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <div class="content">
+                        <h1>AKAN NAME GENERATOR</h1>
+                       
+                        <br>
+                        <br>
+                        <p>The Akan people of Ghana frequently name their children after the day of the week they were born. For each day of the week, there is a name available for each gender.</p>
+                        <p>cool, isnt it?  try it</p>
+                    </div>
+                    <div id="result">
+                        
+                        <div id="error" class="response">
+                            
+                       
+                        <form>
+                            <div class="form-row">
+                               
+                                <div class="form-group col-md-1"></div>
+                                <div class="form-group col-md-1 calendar">
+                                    <span class="input-group-addon" style="font-size:24px; color: rgb(64, 116, 212)"><i class="fa fa-calendar"></i></span>
+                                    
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="dd"><b>Date</b></label>
+                                    
+                                    <input type="number" class="form-control" id="dd" placeholder="1" min="1" max="31" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="mm"><b>Month</b></label>
+                                    
+                                    <select class="form-control" id="mm">
+                                        <!--creates a list of options to be selected from -->
+                                        <option>------</option>
+                                        <!--placeholder for month input box -->
+                                        <option>January</option>
+                                        <option>February</option>
+                                        <option>March</option>
+                                        <option>April</option>
+                                        <option>May</option>
+                                        <option>June</option>
+                                        <option>July</option>
+                                        <option>August</option>
+                                        <option>September</option>
+                                        <option>October</option>
+                                        <option>November</option>
+                                        <option>December</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="yy"><b>Year</b></label>
+                                    <!--label for year input box-->
+                                    <input type="number" class="form-control" id="yy" placeholder="2025" min="1" max="2025" required>
+                                </div>
+                                <div class="form-group col-md-1"></div>
+                            </div>
 
-        <label for="month">Month</label>
-        <input
-          type="number"
-          id="month"
-          name="month"
-          placeholder="MM"
-          min="1"
-          max="12"
-          required
-        />
-
-        <label for="day">Day</label>
-        <input
-          type="number"
-          id="day"
-          name="day"
-          placeholder="DD"
-          min="1"
-          max="31"
-          required
-        />
-
-        <label for="year">Gender</label>
-        <input
-          type="string"
-          id="gender"
-          name="gender"
-          placeholder="Male/Female"
-          min="1900"
-          max="2099"
-          required
-        />
-
-        <a href="">
-          <button id="akan-results" onclick="getAkanName" class="cta-button">
-            Reveal Your Akan Name
-          </button></a
-        >
-      </form>
+                            <div class="form-group">
+                                <label class="label">What's your gender?</label>
+                                <!--label for gender radios -->
+                                <div class="rdio rdio-default">
+                                    <input type="radio" name="gender" id="male" value="Male">
+                                    <label for="male">&nbsp;&nbsp;<b>Male</b></label>
+                                </div>
+                                <div class="rdio rdio-default">
+                                    <input type="radio" name="gender" id="female" value="Female">
+                                    <label for="female">&nbsp;&nbsp;<b>Female</b></label>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button type="submit" onclick="readData(); return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                   
+                        <div class="bottom-left"> &copy; 2025 All Rights Reserved.</div>
+                        <!--places copyright message in bottomleft -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
-</html>
+   
+</body>
+
