@@ -1,0 +1,108 @@
+/* Hero Section */body, h1, p, button, footer {
+  margin: 0;
+  padding: 0;
+  font-family:  'Press Start 2P', sans-serif;
+  box-sizing: border-box;
+}
+
+ .hero.clean-theme {
+  background: url('https://i.pinimg.com/originals/ab/a8/f5/aba8f59ad58977e19d35d0c09760611f.gif') no-repeat center center fixed;
+  background-size: cover; /* Ensures the image scales perfectly to fill the entire viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  height: 100vh; /* Forces the section to fill the viewport */
+  width: 100%;
+}
+
+
+
+/* Content Text */
+.hero .content h1 {
+  font-size: 3 'Press Start 2P', sans-serif; /* Larger for prominence */
+  color: #eceae6;
+  text-shadow: 3px 3px 0px #0f130f;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.3rem; /* Larger supporting text */
+  margin-bottom: 50px;
+  line-height: 1.6;
+  text-shadow: 2px 2px 0px #0a0d0b;
+}
+
+/* Form Section */
+.akan-form {
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid #ebbe8b;
+  border-radius: 15px;
+  padding: 40px 50px;
+  box-shadow: 8px 8px 0px #000000;
+  text-align: left;
+  width: 80%;
+  max-width: 600px; /* Restrict to maintain balance */
+}
+
+.akan-form label {
+  font-size: 1.2rem;
+  margin: 20px 0 10px;
+  color: #ebbe8b;
+}
+
+.akan-form input {
+  width: 100%;
+  font-size: 1.5rem; /* Larger for ease of entry */
+  padding: 15px;
+  background: #0f1a15;
+  border: 3px solid #ebbe8b;
+  border-radius: 8px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.akan-form input::placeholder {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.akan-form input:focus {
+  border-color: #ffffff;
+  outline: none;
+}
+
+/* Call to Action */
+.akan-form .cta-button {
+  background: #ebbe8b;
+  border: none;
+  color: #000000;
+  padding: 15px;
+  font-size: 1.5rem; /* Bigger button text */
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0px #000000;
+  text-transform: uppercase;
+}
+
+.akan-form .cta-button:hover {
+  background: #dac772;
+  transform: scale(1.05);
+}
+/* Floating Animation */
+.floating {
+  animation: floating 3s infinite ease-in-out;
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
