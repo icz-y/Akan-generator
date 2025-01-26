@@ -1,12 +1,12 @@
-# Akan Name Generator
+# Akan Adventure
 
 ## Description
 
-The Akan Name Generator is a web application that calculates your Akan name based on your birthday and gender. Akan names are derived from Ghanaian culture, where children are traditionally given their first name based on the day of the week they were born.
+its a fun, intuative and unique way of finding out your 'akan' name. step inside, find out, dig deep into your curiosity and discover more than your date of birth
 
 ## Author
 
-Albert Byrone
+zinzi njau
 
 ## Setup Instructions
 
@@ -34,10 +34,6 @@ Albert Byrone
 - CSS
 - JavaScript
 
-## Contact Information
-
-[Facebook](https://www.facebook.com/albert.byrone.9)
-[Linkedln](https://www.linkedin.com/in/albert-byrone/)
 
 ## License
 
