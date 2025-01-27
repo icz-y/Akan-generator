@@ -1,3 +1,4 @@
+
 function readData() {
   var dd = document.getElementById("dd").value; 
   var mm = document.getElementById("mm").value; 
@@ -97,4 +98,3 @@ function readData() {
     document.getElementById("error").style.paddingLeft = "38%";
   }
 }
-
