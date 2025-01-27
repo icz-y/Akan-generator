@@ -28,12 +28,15 @@ zinzi njau
 3. Input: Invalid month (month ≤ 0 or month > 12)
    - Output: Error message requesting valid month
 
-## Technologies Used
+## Technical jargon Used
 
 - HTML
 - CSS
 - JavaScript
 
+# contact info~
+
+zinzinjau@gmail.com
 
 ## License
 
